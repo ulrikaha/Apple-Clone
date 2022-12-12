@@ -1,49 +1,34 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-
-
-
 body {
-    color: #272727;
-    font-family: "Quicksand", serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-
-  }
+  color: #272727;
+  font-family: "Quicksand", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
 
 .top-img {
   display: flex;
   align-items: center;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
+
 .border {
   border: 3px solid pink;
 }
 
-// .main-wrapper{
-//  display: flex;
-//  flex-direction: column;
-
-// }
-
 /* Design */
-
-
-
-
-
 .main-cards-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 img {
   height: auto;
@@ -87,19 +72,16 @@ img {
     width: 50%;
   }
 }
-
 @media (min-width: 56rem) {
   .cards_item {
     width: 50%;
   }
 }
-
 .card {
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
-//   flex-direction: column;
   overflow: hidden;
 }
 
@@ -124,11 +106,10 @@ img {
   margin-bottom: 1.25rem;
   font-weight: 400;
 }
+
 .made_by {
   font-weight: 400;
   font-size: 13px;
   margin-top: 35px;
   text-align: center;
-}
-
-
+}/*# sourceMappingURL=style.css.map */
