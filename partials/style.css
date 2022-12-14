@@ -15,6 +15,7 @@ header {
   font-size: 12px;
   font-weight: 400;
   width: 100%;
+  position: relative;
 }
 header li {
   list-style: none;
@@ -91,17 +92,26 @@ header .flex-container-menu-header {
 }
 .navbar-header .nav-menu-shop {
   background-color: white;
-  color: blue;
   transition: 0.3s;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 90px;
+  padding: 15px 90px;
   margin-top: 10px;
 }
-.navbar-header .nav-menu-shop .nav-item-shop {
-  color: red;
+.navbar-header .nav-menu-shop a:link {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop a:visited {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop a:active {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop i {
+  color: #1472D0;
+  margin-right: 10px;
 }
 .navbar-header .nav-menu-shop .nav-item-shop:hover {
   text-decoration: underline;
@@ -109,6 +119,15 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-shop p {
   align-self: center;
   color: hsl(0deg, 0%, 54%);
+}
+@media (min-width: 832px) {
+  .navbar-header .nav-menu-shop {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .navbar-header .nav-menu-shop p {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 832px) {
@@ -147,13 +166,13 @@ header .flex-container-menu-header {
     display: none;
   }
 }
-hr {
+header hr {
   width: 100%;
   border-top: 1px;
 }
 
 @media (min-width: 832px) {
-  hr {
+  hr.hr-menu {
     display: none;
   }
 }
@@ -179,8 +198,19 @@ hr {
 .menulinks-header.active {
   display: block;
   width: 100%;
+  position: absolute;
+  font-size: 15px;
 }
 
+@media (min-width: 832px) {
+  .menulinks-header.active {
+    width: 300px;
+    margin-top: 400px;
+    right: 3px;
+    border-radius: 20px;
+    border: 1px solid #D6D6D6;
+  }
+}
 .shop-logo-header-desktop {
   display: none;
 }
@@ -214,7 +244,7 @@ hr {
   }
 }
 i.fa-brands {
-  color: hsl(0deg, 0%, 84%);
+  color: #D6D6D6;
 }
 i.fa-brands:hover {
   color: hsl(0deg, 0%, 94%);
@@ -246,7 +276,7 @@ i#shopper-mobile:hover {
 .text-header {
   text-align: center;
   width: 100%;
-  background-color: white;
+  background-color: #FBFBFD;
   padding-bottom: 10px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding-top: 50px;
