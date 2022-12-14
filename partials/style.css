@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: sandybrown;
+}
+
 header {
   background-color: hsl(240deg, 1%, 20%);
   height: 50px;
@@ -11,7 +15,6 @@ header {
   font-size: 12px;
   font-weight: 400;
   width: 100%;
-  position: relative;
 }
 header li {
   list-style: none;
@@ -83,30 +86,22 @@ header .flex-container-menu-header {
 @media (min-width: 832px) {
   .navbar-header .nav-item-header {
     margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .navbar-header .nav-menu-shop {
   background-color: white;
+  color: blue;
   transition: 0.3s;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px 90px;
+  padding: 10px 90px;
   margin-top: 10px;
 }
-.navbar-header .nav-menu-shop a:link {
-  color: #1472D0;
-}
-.navbar-header .nav-menu-shop a:visited {
-  color: #1472D0;
-}
-.navbar-header .nav-menu-shop a:active {
-  color: #1472D0;
-}
-.navbar-header .nav-menu-shop i {
-  color: #1472D0;
-  margin-right: 10px;
+.navbar-header .nav-menu-shop .nav-item-shop {
+  color: red;
 }
 .navbar-header .nav-menu-shop .nav-item-shop:hover {
   text-decoration: underline;
@@ -114,15 +109,6 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-shop p {
   align-self: center;
   color: hsl(0deg, 0%, 54%);
-}
-@media (min-width: 832px) {
-  .navbar-header .nav-menu-shop {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .navbar-header .nav-menu-shop p {
-    padding-left: 10px;
-  }
 }
 
 @media (min-width: 832px) {
@@ -138,9 +124,15 @@ header .flex-container-menu-header {
   flex-direction: column;
   padding-left: 20px;
 }
+.hamburger .hamburger.active .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger .hamburger.active .line:nth-child(2) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 .hamburger .line {
   display: block;
-  width: 15px;
+  width: 20px;
   height: 1px;
   margin: 3px auto;
   transition: all 0.3s ease-in-out;
@@ -150,26 +142,18 @@ header .flex-container-menu-header {
   color: hsl(0deg, 0%, 94%);
 }
 
-.hamburger.active .line:nth-child(1) {
-  transform: translateY(3px) rotate(45deg);
-}
-
-.hamburger.active .line:nth-child(2) {
-  transform: translateY(-3px) rotate(-45deg);
-}
-
 @media (min-width: 832px) {
   .hamburger {
     display: none;
   }
 }
-header hr {
+hr {
   width: 100%;
   border-top: 1px;
 }
 
 @media (min-width: 832px) {
-  hr.hr-menu {
+  hr {
     display: none;
   }
 }
@@ -180,8 +164,6 @@ header hr {
 @media (min-width: 832px) {
   .navbar-links-header {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 .navbar-links-header.active {
@@ -197,19 +179,8 @@ header hr {
 .menulinks-header.active {
   display: block;
   width: 100%;
-  position: absolute;
-  font-size: 15px;
 }
 
-@media (min-width: 832px) {
-  .menulinks-header.active {
-    width: 300px;
-    margin-top: 400px;
-    right: 3px;
-    border-radius: 20px;
-    border: 1px solid #D6D6D6;
-  }
-}
 .shop-logo-header-desktop {
   display: none;
 }
@@ -219,7 +190,6 @@ header hr {
     display: inline-block;
     color: #D6D6D6;
     margin-left: 20px;
-    margin-right: 20px;
   }
   .shop-logo-header-desktop:hover {
     color: hsl(0deg, 0%, 94%);
@@ -232,6 +202,7 @@ header hr {
 @media (min-width: 832px) {
   .brand-logo-header-desktop {
     display: inline-block;
+    margin-right: 20px;
   }
   .brand-logo-header-desktop i {
     line-height: normal;
@@ -243,7 +214,7 @@ header hr {
   }
 }
 i.fa-brands {
-  color: #D6D6D6;
+  color: hsl(0deg, 0%, 84%);
 }
 i.fa-brands:hover {
   color: hsl(0deg, 0%, 94%);
@@ -275,7 +246,7 @@ i#shopper-mobile:hover {
 .text-header {
   text-align: center;
   width: 100%;
-  background-color: #FBFBFD;
+  background-color: white;
   padding-bottom: 10px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding-top: 50px;
@@ -306,7 +277,6 @@ i#shopper-mobile:hover {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
-  margin-top: -1px;
 }
 .image-header img {
   width: 70%;
