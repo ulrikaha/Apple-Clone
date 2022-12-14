@@ -106,7 +106,6 @@ header{
     @include desktop{
         .nav-item-header{
             margin-left: 20px;
-            margin-right: 20px;
         }
     }
 
@@ -218,6 +217,8 @@ hr{
 @include desktop{
     .navbar-links-header{
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -258,6 +259,7 @@ hr{
         display: inline-block;
         color: $headerLightGrey;
         margin-left: 20px;
+        margin-right: 20px;
         &:hover{
             color: hsl(0, 0%, 94%);
         }
@@ -270,7 +272,8 @@ hr{
 @include desktop{
     .brand-logo-header-desktop{
         display: inline-block;
-        margin-right: 20px;
+        // margin-right: 20px;
+        // margin-left: 20px;
         i{
             line-height: normal;
         }
@@ -356,6 +359,7 @@ i#shopper-mobile{
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    margin-top: -1px;
     img{
         width: 70%;
         height: 400px;

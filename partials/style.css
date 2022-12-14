@@ -87,7 +87,6 @@ header .flex-container-menu-header {
 @media (min-width: 832px) {
   .navbar-header .nav-item-header {
     margin-left: 20px;
-    margin-right: 20px;
   }
 }
 .navbar-header .nav-menu-shop {
@@ -183,6 +182,8 @@ header hr {
 @media (min-width: 832px) {
   .navbar-links-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .navbar-links-header.active {
@@ -220,6 +221,7 @@ header hr {
     display: inline-block;
     color: #D6D6D6;
     margin-left: 20px;
+    margin-right: 20px;
   }
   .shop-logo-header-desktop:hover {
     color: hsl(0deg, 0%, 94%);
@@ -232,7 +234,6 @@ header hr {
 @media (min-width: 832px) {
   .brand-logo-header-desktop {
     display: inline-block;
-    margin-right: 20px;
   }
   .brand-logo-header-desktop i {
     line-height: normal;
@@ -307,6 +308,7 @@ i#shopper-mobile:hover {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  margin-top: -1px;
 }
 .image-header img {
   width: 70%;
