@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: sandybrown;
-}
-
 header {
   background-color: hsl(240deg, 1%, 20%);
   height: 50px;
@@ -144,7 +140,7 @@ header .flex-container-menu-header {
 }
 .hamburger .line {
   display: block;
-  width: 20px;
+  width: 15px;
   height: 1px;
   margin: 3px auto;
   transition: all 0.3s ease-in-out;
