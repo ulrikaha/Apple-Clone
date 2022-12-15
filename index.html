@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agile Project - Apple website</title>
-    <link rel="stylesheet" href="./partials/style.css">
+    <link rel="stylesheet" href="/partials/style.css" />
+
     <script
       src="https://kit.fontawesome.com/74a17a880c.js"
       crossorigin="anonymous"
@@ -30,6 +31,7 @@
             ></i>
           </div>
         </div>
+
         <div class="flex-container-menu-header">
           <!-- Länkarna i menyn -->
           <div class="navbar-links-header">
@@ -42,55 +44,54 @@
                 class="search-nav-header"
                 placeholder="Sök på apple.com"
               />
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Butik</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Mac</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">iPad</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">iPhone</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Watch</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Airpods</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Tv och hem</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Bara hos Apple</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Tillbehör</a>
               </li>
-              <hr />
+              <hr class="hr-menu" />
               <li class="nav-item-header">
                 <a href="#" class="nav-link-header">Support</a>
               </li>
             </ul>
-          </div>
-          <div class="search-icon-header-desktop">
-            <i class="fa-brands fa-searchengin fa-xl"></i>
-          </div>
+            <div class="search-icon-header-desktop">
+              <i class="fa-brands fa-searchengin fa-xl"></i>
+            </div>
 
-
-          <div class="shop-logo-header-desktop">
-            <i class="fa-sharp fa-solid fa-bag-shopping fa-lg"></i>
+            <div class="shop-logo-header-desktop">
+              <i class="fa-sharp fa-solid fa-bag-shopping fa-lg"></i>
+            </div>
           </div>
 
           <!-- Länkar till shopping -->
@@ -99,22 +100,27 @@
               <p>Din kasse är tom</p>
               <hr />
               <li class="nav-item-shop">
-                <a href="#" class="nav-link-shop">Kassa</a>
+                <i class="fa-sharp fa-solid fa-bag-shopping fa-md"></i>
+                <a href="#" class="nav-link-shop">Kasse</a>
               </li>
               <hr />
               <li class="nav-item-shop">
+                <i class="fa-regular fa-bookmark"></i>
                 <a href="#" class="nav-link-shop">Sparade varor</a>
               </li>
               <hr />
               <li class="nav-item-shop">
+                <i class="fa-solid fa-box"></i>
                 <a href="#" class="nav-link-shop">Beställningar</a>
               </li>
               <hr />
               <li class="nav-item-shop">
+                <i class="fa-sharp fa-solid fa-gear"></i>
                 <a href="#" class="nav-link-shop">Konto</a>
               </li>
               <hr />
               <li class="nav-item-shop">
+                <i class="fa-regular fa-circle-user"></i>
                 <a href="#" class="nav-link-shop">Logga in</a>
               </li>
             </ul>
@@ -133,85 +139,90 @@
     <div class="image-header">
       <img src="hero_iphone14.jpg" alt="" />
     </div>
-    <p>hej</p>
+    <div class="top-img-container">
+      <div class="top-card">
+        <img src="./assets/emoji.jpeg" />
+        <div class="emoji-text">
+          <h2>It´s wow or never.</h2>
+          <p>
+            Dicover last-minute gifts that <br />
+            will make a lasting impression
+          </p>
+          <a href="#">Shop the Holiday Gift Guide > </a>
+        </div>
+      </div>
 
+      <div class="top-card">
+        <img src="./assets/ipad-img.jpeg" />
+        <div class="Ipad-text">
+          <h2>iPad</h2>
+          <p class="ipad-text-p">Lovable.Drawable.Magical</p>
+          <a class="ipad-text-a" href="#">Learn more > </a>
+          <a href="#">buy > </a>
+        </div>
+      </div>
+    </div>
 
+    <div class="img-gallery-container">
+      <div class="card">
+        <img src="./assets/promo_iphone14pro.jpeg" />
+        <div class="iphone14-text">
+          <h2>iPad</h2>
+          <p class="ipad-text-p">Lovable.Drawable.Magical</p>
+          <a class="ipad-text-a" href="#">Learn more > </a>
+          <a href="#">buy > </a>
+        </div>
+      </div>
 
+      <div class="card">
+        <img src="./assets/promo_ipadpro.jpeg" />
+        <div class="ipodpro-text">
+          <h2>iPad</h2>
+          <p class="ipad-text-p">Lovable.Drawable.Magical</p>
+          <a class="ipad-text-a" href="#">Learn more > </a>
+          <a href="#">buy > </a>
+        </div>
+      </div>
 
+      <div class="card">
+        <img src="./assets/promo_airpods_pro.jpeg" />
+        <div class="airpod-text">
+          <h2>AirPods</h2>
+          <p class="ipad-text-p">share the joy</p>
+          <a class="ipad-text-a" href="#">Shop > </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/promo_apple_watch.jpeg" />
+        <div class="apple-watch-text">
+          <h2>WATCH</h2>
+          <p class="ipad-text-p">A healthy leap ahead</p>
+          <a class="ipad-text-a" href="#">Learn more > </a>
+          <a href="#">buy > </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/promo_apple_watch_ultra.jpeg" />
+        <div class="apple-watch-ultra-text">
+          <h2>WATCH</h2>
+          <p class="ipad-text-p">Adventure Awaits</p>
+          <a class="ipad-text-a" href="#">Learn more > </a>
+          <a href="#">buy > </a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/promo_tv4k.jpeg" />
+      <div class="tv4k-text">
+        <h2>tv4K</h2>
+        <p class="ipad-text-p">
+          Upplevelsen med Apple. <br />
+          Storslagen på alla sätt och vis
+        </p>
+        <a class="ipad-text-a" href="#">Learn more > </a> <a href="#">buy > </a>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
- <!--Footer content-->
-   
-    <footer class="footer-wrapper">
-        <div class="footer-container">
-         <nav class="footer-nav">
-            <div class="footer-nav-column">
-                    <h3 class="h3-footer">Handla och läs mer</h3></div>
-                        <hr>
-                     <div class="footer-nav-column">
-                    <h3 class="h3-footer">Services</h3></div>
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">Konto</h3></div> 
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">Apple Store</h3></div>
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">För företag</h3></div>
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">För utbildning</h3></div>
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">För sjukvården</h3></div>
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">Apples värderingar</h3></div>
-                        <hr>
-                    <div class="footer-nav-column">
-                    <h3 class="h3-footer">Om apple</h3></div>
-                        <hr>
-
-                    <div class="footer-shop">
-                    <p>Fler sätt att handla: <a href="#" class="footer-blue-link">Hitta en Apple Store</a> 
-                    eller <a href="#" class="footer-blue-link">annan återförsäljare i närheten.</a>  
-                    Eller ring 020-120 99 71.</p>
-                    </div>
-
-                    <div class="footer-loction">
-                    <a href="#" id="sverige">Sverige</a>
-                    </div>
-
-                    <div class="footer-copyright">
-                    <p>Copyright © 2022 Apple Inc. Alla rättigheter förbehålls.</p>
-                    </div>
-
-                    <div class="footer-links">
-                    <a class="footer-bottom-link" href="#">Integritetspolicy</a>
-                    &mid;
-                    <a class="footer-bottom-link" href="#">Användning av cookies</a>
-                    &mid;
-                    <a class="footer-bottom-link" href="#">Användningsvillkor</a>
-                    &mid;
-                    <a class="footer-bottom-link" href="#">Försäljning och återbetalning</a>
-                    &mid;
-                    <a class="footer-bottom-link" href="#">Juridisk information</a>
-                    &mid;
-                    <a class="footer-bottom-link" href="#">Sajtkarta</a>
-                    </div>
-                </nav>
-            </div>
-    </footer>
-
- <script src="script.js"></script> 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
