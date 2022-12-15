@@ -285,6 +285,11 @@ header .flex-container-menu-header {
   margin-left: 75px;
   margin-top: -49px;
 }
+@media (min-width: 832px) {
+  .navbar-header .nav-menu-header i.fa-brands {
+    display: none;
+  }
+}
 .navbar-header .nav-menu-header .nav-link-header {
   color: #D6D6D6;
 }

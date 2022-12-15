@@ -90,6 +90,11 @@ header{
             margin-left: 75px;
             margin-top: -49px;
         }
+        @include desktop{
+            i.fa-brands{
+                display: none;
+            }
+        }
         .nav-link-header{
             color: $headerLightGrey;
             &:hover{
