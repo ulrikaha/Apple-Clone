@@ -93,7 +93,7 @@ p {
 
 .top-img-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
   grid-gap: 0.5rem;
   position: relative;
 }
@@ -219,10 +219,6 @@ img {
   box-sizing: border-box;
 }
 
-body {
-  background-color: sandybrown;
-}
-
 header {
   background-color: hsl(240deg, 1%, 20%);
   height: 50px;
@@ -230,6 +226,7 @@ header {
   font-size: 12px;
   font-weight: 400;
   width: 100%;
+  position: relative;
 }
 header li {
   list-style: none;
@@ -268,11 +265,30 @@ header .flex-container-menu-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 90px;
   margin-top: 5px;
   background-color: black;
   transition: 0.3s;
   height: 100vh;
+  font-size: 16px;
+  color: #D6D6D6;
+}
+.navbar-header .nav-menu-header li {
+  padding: 10px 60px;
+}
+.navbar-header .nav-menu-header hr {
+  margin-top: 10px;
+}
+.navbar-header .nav-menu-header #first-hr {
+  width: 100vw;
+}
+.navbar-header .nav-menu-header i.fa-brands {
+  margin-left: 75px;
+  margin-top: -49px;
+}
+@media (min-width: 832px) {
+  .navbar-header .nav-menu-header i.fa-brands {
+    display: none;
+  }
 }
 .navbar-header .nav-menu-header .nav-link-header {
   color: #D6D6D6;
@@ -281,9 +297,14 @@ header .flex-container-menu-header {
   color: white;
 }
 .navbar-header .nav-menu-header .search-nav-header {
-  background-color: hsl(240deg, 1%, 20%);
+  background-color: #1D1D1F;
   padding: 10px;
   border-radius: 10px;
+  margin: 10px 60px;
+  border-right-style: hidden;
+  border-bottom-style: hidden;
+  padding-left: 40px;
+  font-size: 16px;
 }
 @media (min-width: 832px) {
   .navbar-header .nav-menu-header .search-nav-header {
@@ -296,27 +317,40 @@ header .flex-container-menu-header {
     background-color: hsl(240deg, 1%, 20%);
     height: auto;
     padding: 0;
+    font-size: 12px;
+  }
+  .navbar-header .nav-menu-header li {
+    padding: 0;
   }
 }
 @media (min-width: 832px) {
   .navbar-header .nav-item-header {
     margin-left: 20px;
-    margin-right: 20px;
   }
 }
 .navbar-header .nav-menu-shop {
   background-color: white;
-  color: blue;
   transition: 0.3s;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 90px;
+  padding: 15px 90px;
   margin-top: 10px;
+  border-radius: 20px;
 }
-.navbar-header .nav-menu-shop .nav-item-shop {
-  color: red;
+.navbar-header .nav-menu-shop a:link {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop a:visited {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop a:active {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop i {
+  color: #1472D0;
+  margin-right: 10px;
 }
 .navbar-header .nav-menu-shop .nav-item-shop:hover {
   text-decoration: underline;
@@ -324,6 +358,15 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-shop p {
   align-self: center;
   color: hsl(0deg, 0%, 54%);
+}
+@media (min-width: 832px) {
+  .navbar-header .nav-menu-shop {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .navbar-header .nav-menu-shop p {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 832px) {
@@ -339,15 +382,9 @@ header .flex-container-menu-header {
   flex-direction: column;
   padding-left: 20px;
 }
-.hamburger .hamburger.active .line:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger .hamburger.active .line:nth-child(2) {
-  transform: translateY(-8px) rotate(-45deg);
-}
 .hamburger .line {
   display: block;
-  width: 20px;
+  width: 15px;
   height: 1px;
   margin: 3px auto;
   transition: all 0.3s ease-in-out;
@@ -357,18 +394,26 @@ header .flex-container-menu-header {
   color: hsl(0deg, 0%, 94%);
 }
 
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(3px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
 @media (min-width: 832px) {
   .hamburger {
     display: none;
   }
 }
-hr {
+header hr {
   width: 100%;
   border-top: 1px;
 }
 
 @media (min-width: 832px) {
-  hr {
+  hr.hr-menu {
     display: none;
   }
 }
@@ -379,6 +424,8 @@ hr {
 @media (min-width: 832px) {
   .navbar-links-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .navbar-links-header.active {
@@ -394,8 +441,39 @@ hr {
 .menulinks-header.active {
   display: block;
   width: 100%;
+  position: absolute;
+  font-size: 15px;
 }
 
+@media (min-width: 832px) {
+  .menulinks-header.active {
+    width: 300px;
+    margin-top: 60vh;
+    right: 0.5vw;
+    border-radius: 20px;
+    border: 1px solid #D6D6D6;
+  }
+}
+@media (min-width: 832px) and (min-width: 935px) {
+  .menulinks-header.active {
+    right: 5vw;
+  }
+}
+@media (min-width: 832px) and (min-width: 1100px) {
+  .menulinks-header.active {
+    right: 12vw;
+  }
+}
+@media (min-width: 832px) and (min-width: 1200px) {
+  .menulinks-header.active {
+    right: 15vw;
+  }
+}
+@media (min-width: 832px) and (min-width: 1350px) {
+  .menulinks-header.active {
+    right: 20vw;
+  }
+}
 .shop-logo-header-desktop {
   display: none;
 }
@@ -405,6 +483,7 @@ hr {
     display: inline-block;
     color: #D6D6D6;
     margin-left: 20px;
+    margin-right: 20px;
   }
   .shop-logo-header-desktop:hover {
     color: hsl(0deg, 0%, 94%);
@@ -417,7 +496,6 @@ hr {
 @media (min-width: 832px) {
   .brand-logo-header-desktop {
     display: inline-block;
-    margin-right: 20px;
   }
   .brand-logo-header-desktop i {
     line-height: normal;
@@ -429,7 +507,7 @@ hr {
   }
 }
 i.fa-brands {
-  color: hsl(0deg, 0%, 84%);
+  color: #D6D6D6;
 }
 i.fa-brands:hover {
   color: hsl(0deg, 0%, 94%);
@@ -461,7 +539,7 @@ i#shopper-mobile:hover {
 .text-header {
   text-align: center;
   width: 100%;
-  background-color: white;
+  background-color: #FBFBFD;
   padding-bottom: 10px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding-top: 50px;
@@ -492,6 +570,7 @@ i#shopper-mobile:hover {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  margin-top: -1px;
 }
 .image-header img {
   width: 70%;
