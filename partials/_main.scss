@@ -7,20 +7,19 @@
 
 .top-img-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
   grid-gap: 0.5rem;
   position: relative;
 
-  @media(min-width:678px){
-    grid-template-columns: repeat(auto-fill, minmax(850px, 1fr))
-
+  @media (min-width: 678px) {
+    grid-template-columns: repeat(auto-fill, minmax(850px, 1fr));
   }
 }
 .top-card {
   height: 700px;
   position: relative;
   overflow: hidden;
-  
+
   display: grid;
   grid-template-rows: 1fr 1fr;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -100,14 +99,13 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   grid-gap: 0.5rem;
- 
 }
 
 .card {
   height: 700px;
   position: relative;
   overflow: hidden;
-  
+
   display: grid;
   grid-template-rows: 1fr 1fr;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
