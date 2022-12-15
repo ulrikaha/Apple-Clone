@@ -281,6 +281,10 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-header #first-hr {
   width: 100vw;
 }
+.navbar-header .nav-menu-header i.fa-brands {
+  margin-left: 75px;
+  margin-top: -49px;
+}
 .navbar-header .nav-menu-header .nav-link-header {
   color: #D6D6D6;
 }
@@ -294,8 +298,8 @@ header .flex-container-menu-header {
   margin: 10px 60px;
   border-right-style: hidden;
   border-bottom-style: hidden;
+  padding-left: 40px;
   font-size: 16px;
-  padding-left: 50px;
 }
 @media (min-width: 832px) {
   .navbar-header .nav-menu-header .search-nav-header {
@@ -307,6 +311,10 @@ header .flex-container-menu-header {
     flex-direction: row;
     background-color: hsl(240deg, 1%, 20%);
     height: auto;
+    padding: 0;
+    font-size: 12px;
+  }
+  .navbar-header .nav-menu-header li {
     padding: 0;
   }
 }
@@ -492,11 +500,6 @@ i#shopper-mobile:hover {
     display: none;
   }
 }
-ul.nav-menu-header i.fa-brands {
-  margin-left: 75px;
-  margin-top: -49px;
-}
-
 .search-icon-header-desktop {
   display: none;
 }
