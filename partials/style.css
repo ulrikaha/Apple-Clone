@@ -1,3 +1,92 @@
+
+footer {
+  margin-top: auto;
+  display: block;
+  position: fixed;
+  height: auto;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "SF Pro Text";
+  font-size: 12px;
+}
+
+.footer-nav {
+  background-color: rgba(245, 245, 247, 0.937254902);
+  padding-top: 20px;
+  padding-bottom: 17px;
+}
+
+.footer-nav-column {
+  direction: ltr;
+  text-align: left;
+  pointer-events: auto;
+  padding: 0px 0px;
+  margin-left: 10px;
+}
+
+h3 {
+  color: #6E6E73;
+  font-family: "SF Pro Text";
+  font-size: 12px;
+  letter-spacing: normal;
+  line-height: 1.33337;
+  font-weight: 400;
+}
+
+hr {
+  margin: 0px 10px 0px;
+  max-width: 25rem;
+}
+
+.footer-shop {
+  margin-left: 10px;
+}
+
+p {
+  font-family: "SF Pro Text";
+  font-size: 12px;
+  color: #6E6E73;
+  letter-spacing: normal;
+  line-height: 1.33337;
+  font-weight: 400;
+}
+
+.footer-blue-link {
+  font-family: "SF Pro Text";
+  color: #0066CC;
+  text-decoration: none;
+}
+
+.footer-location {
+  margin: 10px;
+}
+
+#sverige {
+  font-family: "SF Pro Text";
+  font-size: 12px;
+  margin: 10px;
+  color: #424245;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  margin: 10px;
+  color: #6E6E73;
+}
+
+.footer-links {
+  margin: 10px;
+  margin-top: 0;
+}
+
+.footer-bottom-link {
+  color: #424245;
+  text-decoration: none;
+  margin: 5px 7px 0px 0px;
+  padding: 0px 10px 0px 0px;
+
 * {
   margin: 0;
   padding: 0;
@@ -288,4 +377,5 @@ i#shopper-mobile:hover {
   .image-header img {
     width: 100%;
   }
+
 }/*# sourceMappingURL=style.css.map */
