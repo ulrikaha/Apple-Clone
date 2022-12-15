@@ -291,12 +291,11 @@ header .flex-container-menu-header {
   background-color: #1D1D1F;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 10px;
+  margin: 10px 60px;
   border-right-style: hidden;
   border-bottom-style: hidden;
   font-size: 16px;
+  padding-left: 50px;
 }
 @media (min-width: 832px) {
   .navbar-header .nav-menu-header .search-nav-header {
@@ -493,6 +492,11 @@ i#shopper-mobile:hover {
     display: none;
   }
 }
+ul.nav-menu-header i.fa-brands {
+  margin-left: 75px;
+  margin-top: -40px;
+}
+
 .search-icon-header-desktop {
   display: none;
 }
