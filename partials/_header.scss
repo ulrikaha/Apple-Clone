@@ -10,6 +10,30 @@
     }
 }
 
+@mixin shop-menu {
+    @media (min-width: 935px){
+        @content;
+    }
+}
+
+@mixin shop-menu-md {
+    @media (min-width: 1100px){
+        @content;
+    }
+}
+
+@mixin shop-menu-lg {
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+
+@mixin shop-menu-xl {
+    @media (min-width: 1350px){
+        @content;
+    }
+}
+
 $headerBlue: #1472D0;
 $headerDarkGrey: hsl(240, 1%, 20%);
 $headerLightGrey: #D6D6D6;
@@ -163,6 +187,7 @@ header{
         justify-content: space-between;
         padding: 15px 90px;
         margin-top: 10px;
+        border-radius: 20px;
         .nav-item-shop{
             
             &:hover{
@@ -269,10 +294,30 @@ hr{
 @include desktop{
     .menulinks-header.active{
         width: 300px;
-        margin-top: 400px;
-        right: 3px;
+        margin-top: 60vh;
+        right: 0.5vw;
         border-radius: 20px;
         border: 1px solid $headerLightGrey;
+    }
+    @include shop-menu{
+        .menulinks-header.active{
+            right: 5vw;
+        }
+    }
+    @include shop-menu-md{
+        .menulinks-header.active{
+            right: 12vw;
+        }
+    }
+    @include shop-menu-lg{
+        .menulinks-header.active{
+            right: 15vw;
+        }
+    }
+    @include shop-menu-xl{
+        .menulinks-header.active{
+            right: 20vw;
+        }
     }
 }
 
