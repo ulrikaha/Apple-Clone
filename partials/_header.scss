@@ -10,24 +10,25 @@
     }
 }
 
+$headerBlue: #1472D0;
+$headerDarkGrey: hsl(240, 1%, 20%);
+$headerLightGrey: #D6D6D6;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: sandybrown;
-}
-
 header{
-    background-color: hsl(240, 1%, 20%);
+    background-color: $headerDarkGrey;
     height: 50px;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 12px;
     // line-height: 1.47059;
     font-weight: 400;
     width: 100%;
+    position: relative;
     li{
         list-style: none;
         a{
@@ -73,13 +74,13 @@ header{
         transition: 0.3s;
         height: 100vh;
         .nav-link-header{
-            color: #D6D6D6;
+            color: $headerLightGrey;
             &:hover{
                 color: white;
             }
         }
         .search-nav-header{
-            background-color: hsl(240, 1%, 20%);
+            background-color: $headerDarkGrey;
             padding: 10px;
             border-radius: 10px;
         }
@@ -92,8 +93,8 @@ header{
     @include desktop{
         .nav-menu-header{
             flex-direction: row;
-            background-color: hsl(240, 1%, 20%);
-            height: auto; //FIXA
+            background-color: $headerDarkGrey;
+            height: auto;
             padding: 0;
         }
     }
@@ -101,22 +102,36 @@ header{
     @include desktop{
         .nav-item-header{
             margin-left: 20px;
-            margin-right: 20px;
         }
     }
 
     .nav-menu-shop{
         background-color: white;
-        color: blue;
+            a{
+                &:link{
+                color: $headerBlue;
+                }
+                &:visited{
+                color: $headerBlue;
+                }
+
+                &:active{
+                color: $headerBlue;
+                }
+            }
+            i{
+                color: $headerBlue;
+                margin-right: 10px;
+            }
         transition: 0.3s;
         height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px 90px;
+        padding: 15px 90px;
         margin-top: 10px;
         .nav-item-shop{
-            color: red;
+            
             &:hover{
                 text-decoration: underline;
             }
@@ -125,6 +140,16 @@ header{
         p{
             align-self: center;
             color:hsl(0, 0%, 54%);
+        }
+    }
+    @include desktop{
+        .nav-menu-shop{
+            padding-left: 30px;
+            padding-right: 30px;
+            p{
+                padding-left: 10px;
+            }
+
         }
     }
 }
@@ -142,25 +167,24 @@ header{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    
-    .hamburger.active .line:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .line:nth-child(2){
-        transform: translateY(-8px) rotate(-45deg);
-    }
     .line{
         display:block;
-        width: 20px;
+        width: 15px;
         height: 1px;
         margin: 3px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        background-color: #D6D6D6;
+        background-color: $headerLightGrey;
         &:hover{
             color: hsl(0, 0%, 94%);
         }
     }
+}
+.hamburger.active .line:nth-child(1){
+    transform: translateY(3px) rotate(45deg);
+}
+.hamburger.active .line:nth-child(2){
+    transform: translateY(-3px) rotate(-45deg);
 }
 @include desktop{
     .hamburger{
@@ -168,16 +192,17 @@ header{
     }
 }
 
+header{
 hr{
     width: 100%;
     border-top: 1px;
 }
+}
 @include desktop{
-    hr{
+    hr.hr-menu{
         display: none;
     }
 }
-
 
 //Få menyerna att synas när jag klickar på den och försvinna
 .navbar-links-header{
@@ -186,6 +211,8 @@ hr{
 @include desktop{
     .navbar-links-header{
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -194,6 +221,7 @@ hr{
     width: 100%;
 }
 
+//För "shoppingmenyn"
 .menulinks-header{
     display: none;
     width: 100%;
@@ -202,9 +230,20 @@ hr{
 .menulinks-header.active{
     display: block;
     width: 100%;
+    position: absolute;
+    font-size: 15px;
+}
+@include desktop{
+    .menulinks-header.active{
+        width: 300px;
+        margin-top: 400px;
+        right: 3px;
+        border-radius: 20px;
+        border: 1px solid $headerLightGrey;
+    }
 }
 
-//denna ikon är dold i mobile men syns i desktop och placeras då längst till höger
+//denna shopping-ikon är dold i mobile men syns i desktop och placeras då längst till höger
 
 .shop-logo-header-desktop{
     display: none;
@@ -212,8 +251,9 @@ hr{
 @include desktop{
     .shop-logo-header-desktop{
         display: inline-block;
-        color: #D6D6D6;
+        color: $headerLightGrey;
         margin-left: 20px;
+        margin-right: 20px;
         &:hover{
             color: hsl(0, 0%, 94%);
         }
@@ -226,7 +266,8 @@ hr{
 @include desktop{
     .brand-logo-header-desktop{
         display: inline-block;
-        margin-right: 20px;
+        // margin-right: 20px;
+        // margin-left: 20px;
         i{
             line-height: normal;
         }
@@ -241,13 +282,13 @@ hr{
 }
 
 i.fa-brands{
-    color: hsl(0, 0%, 84%);
+    color: $headerLightGrey;
     &:hover{
         color: hsl(0, 0%, 94%);
     }
 }
 i#shopper-mobile{
-    color: #D6D6D6;
+    color: $headerLightGrey;
     padding-right: 20px;
     &:hover{
         color: hsl(0, 0%, 94%);
@@ -276,7 +317,7 @@ i#shopper-mobile{
 .text-header{
    text-align: center;
    width: 100%;
-   background-color: white;
+   background-color: #FBFBFD;
    padding-bottom: 10px;
    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
    padding-top: 50px;
@@ -298,12 +339,11 @@ i#shopper-mobile{
     font-size: 20px;
     text-decoration: none;
     padding: 25px;
-    color: #1472D0;
+    color: $headerBlue;
   
     
    }
 };
-
 
 .image-header{
     width: 100%;
@@ -311,6 +351,7 @@ i#shopper-mobile{
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    margin-top: -1px;
     img{
         width: 70%;
         height: 400px;
@@ -322,15 +363,3 @@ i#shopper-mobile{
         }
     }
 }
-
-
-// @media(min-width: 832px){
-
-  
-
-   
-//     .hamburger{
-//         display: none;
-//     }
-
-// }

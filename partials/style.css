@@ -1,7 +1,6 @@
 footer {
   margin-top: auto;
   display: block;
-  position: fixed;
   height: auto;
   width: 100vw;
   bottom: 0;
@@ -9,10 +8,10 @@ footer {
   right: 0;
   font-family: "SF Pro Text";
   font-size: 12px;
+  background-color: #f5f5f7;
 }
 
 .footer-nav {
-  background-color: rgba(245, 245, 247, 0.937254902);
   padding-top: 20px;
   padding-bottom: 17px;
 }
@@ -21,11 +20,11 @@ footer {
   direction: ltr;
   text-align: left;
   pointer-events: auto;
-  padding: 0px 0px;
+  padding: 10px 0px;
   margin-left: 10px;
 }
 
-h3 {
+.h3-footer {
   color: #6E6E73;
   font-family: "SF Pro Text";
   font-size: 12px;
@@ -34,13 +33,17 @@ h3 {
   font-weight: 400;
 }
 
-hr {
+.footer-hr {
   margin: 0px 10px 0px;
-  max-width: 25rem;
+  width: 500px;
+  height: 1px;
+  color: #424245;
 }
 
 .footer-shop {
   margin-left: 10px;
+  padding-top: 19px;
+  padding-bottom: 5px;
 }
 
 p {
@@ -60,6 +63,7 @@ p {
 
 .footer-location {
   margin: 10px;
+  padding-bottom: 10px;
 }
 
 #sverige {
@@ -89,7 +93,7 @@ p {
 
 .top-img-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
   grid-gap: 0.5rem;
   position: relative;
 }
@@ -215,10 +219,6 @@ img {
   box-sizing: border-box;
 }
 
-body {
-  background-color: sandybrown;
-}
-
 header {
   background-color: hsl(240deg, 1%, 20%);
   height: 50px;
@@ -226,6 +226,7 @@ header {
   font-size: 12px;
   font-weight: 400;
   width: 100%;
+  position: relative;
 }
 header li {
   list-style: none;
@@ -297,22 +298,30 @@ header .flex-container-menu-header {
 @media (min-width: 832px) {
   .navbar-header .nav-item-header {
     margin-left: 20px;
-    margin-right: 20px;
   }
 }
 .navbar-header .nav-menu-shop {
   background-color: white;
-  color: blue;
   transition: 0.3s;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 90px;
+  padding: 15px 90px;
   margin-top: 10px;
 }
-.navbar-header .nav-menu-shop .nav-item-shop {
-  color: red;
+.navbar-header .nav-menu-shop a:link {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop a:visited {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop a:active {
+  color: #1472D0;
+}
+.navbar-header .nav-menu-shop i {
+  color: #1472D0;
+  margin-right: 10px;
 }
 .navbar-header .nav-menu-shop .nav-item-shop:hover {
   text-decoration: underline;
@@ -320,6 +329,15 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-shop p {
   align-self: center;
   color: hsl(0deg, 0%, 54%);
+}
+@media (min-width: 832px) {
+  .navbar-header .nav-menu-shop {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .navbar-header .nav-menu-shop p {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 832px) {
@@ -335,15 +353,9 @@ header .flex-container-menu-header {
   flex-direction: column;
   padding-left: 20px;
 }
-.hamburger .hamburger.active .line:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger .hamburger.active .line:nth-child(2) {
-  transform: translateY(-8px) rotate(-45deg);
-}
 .hamburger .line {
   display: block;
-  width: 20px;
+  width: 15px;
   height: 1px;
   margin: 3px auto;
   transition: all 0.3s ease-in-out;
@@ -353,18 +365,26 @@ header .flex-container-menu-header {
   color: hsl(0deg, 0%, 94%);
 }
 
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(3px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
 @media (min-width: 832px) {
   .hamburger {
     display: none;
   }
 }
-hr {
+header hr {
   width: 100%;
   border-top: 1px;
 }
 
 @media (min-width: 832px) {
-  hr {
+  hr.hr-menu {
     display: none;
   }
 }
@@ -375,6 +395,8 @@ hr {
 @media (min-width: 832px) {
   .navbar-links-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .navbar-links-header.active {
@@ -390,8 +412,19 @@ hr {
 .menulinks-header.active {
   display: block;
   width: 100%;
+  position: absolute;
+  font-size: 15px;
 }
 
+@media (min-width: 832px) {
+  .menulinks-header.active {
+    width: 300px;
+    margin-top: 400px;
+    right: 3px;
+    border-radius: 20px;
+    border: 1px solid #D6D6D6;
+  }
+}
 .shop-logo-header-desktop {
   display: none;
 }
@@ -401,6 +434,7 @@ hr {
     display: inline-block;
     color: #D6D6D6;
     margin-left: 20px;
+    margin-right: 20px;
   }
   .shop-logo-header-desktop:hover {
     color: hsl(0deg, 0%, 94%);
@@ -413,7 +447,6 @@ hr {
 @media (min-width: 832px) {
   .brand-logo-header-desktop {
     display: inline-block;
-    margin-right: 20px;
   }
   .brand-logo-header-desktop i {
     line-height: normal;
@@ -425,7 +458,7 @@ hr {
   }
 }
 i.fa-brands {
-  color: hsl(0deg, 0%, 84%);
+  color: #D6D6D6;
 }
 i.fa-brands:hover {
   color: hsl(0deg, 0%, 94%);
@@ -457,7 +490,7 @@ i#shopper-mobile:hover {
 .text-header {
   text-align: center;
   width: 100%;
-  background-color: white;
+  background-color: #FBFBFD;
   padding-bottom: 10px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding-top: 50px;
@@ -488,6 +521,7 @@ i#shopper-mobile:hover {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  margin-top: -1px;
 }
 .image-header img {
   width: 70%;
