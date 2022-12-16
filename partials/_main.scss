@@ -1,3 +1,4 @@
+
 $color-white: #ffffff;
 $color-black: #252a32;
 $color-light: #f1f5f8;
@@ -207,3 +208,126 @@ body{
 //     align-items: center;
 //     /* flex: auto; */
 //     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// font-family: 'Unica One', cursive;
+// *,
+// *::after *::after {
+//   box-sizing: border-box;
+//   margin: 0px;
+// }
+
+.top-img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
+  grid-gap: 0.5rem;
+  position: relative;
+
+  @media (min-width: 678px) {
+    grid-template-columns: repeat(auto-fill, minmax(850px, 1fr));
+  }
+}
+.top-card {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.emoji-text {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.Ipad-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.iphone14-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.ipodpro-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.airpod-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.apple-watch-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.apple-watch-ultra-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.tv4k-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.img-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.card {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+img {
+  position: absolute;
+  top: 0;
+  height: 110%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
