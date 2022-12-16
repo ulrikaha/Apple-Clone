@@ -35,7 +35,6 @@ footer {
 
 .footer-hr {
   margin: 0px 10px 0px;
-  width: 500px;
   height: 1px;
   color: #424245;
 }
@@ -93,7 +92,7 @@ p {
 
 .top-img-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
   grid-gap: 0.5rem;
   position: relative;
 }
