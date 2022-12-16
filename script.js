@@ -1,5 +1,5 @@
-/* Responsive CSS slider */
 
+/* Responsive CSS slider */
 let sliderUL = document.querySelector('.s-type-3 > .s-content');
 let sliderLength = sliderUL.childElementCount;
 let leftControl = document.querySelector('.s-type-3 .left-control');
