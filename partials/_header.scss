@@ -44,7 +44,6 @@ $headerLightGrey: #D6D6D6;
     box-sizing: border-box;
 }
 
-
 body{
     background-color: white;
 }
@@ -103,8 +102,9 @@ header{
         height: 100vh;
         font-size: 16px;
         color: $headerLightGrey;
-        position: absolute;
+        position: relative;
         z-index: 1001;
+        padding-bottom: 100px;
         li{
             padding: 10px 60px;
         }
@@ -194,7 +194,7 @@ header{
         justify-content: space-between;
         padding: 15px 90px;
         margin-top: 10px;
-        border-radius: 20px;
+        
         .nav-item-shop{
             
             &:hover{
@@ -205,12 +205,14 @@ header{
         p{
             align-self: center;
             color:hsl(0, 0%, 54%);
+            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         }
     }
     @include desktop{
         .nav-menu-shop{
             padding-left: 30px;
             padding-right: 30px;
+            border-radius: 20px;
             p{
                 padding-left: 10px;
             }
@@ -448,3 +450,5 @@ i#shopper-mobile{
         }
     }
 }
+
+

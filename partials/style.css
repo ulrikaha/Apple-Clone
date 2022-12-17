@@ -541,8 +541,9 @@ header .flex-container-menu-header {
   height: 100vh;
   font-size: 16px;
   color: #D6D6D6;
-  position: absolute;
+  position: relative;
   z-index: 1001;
+  padding-bottom: 100px;
 }
 .navbar-header .nav-menu-header li {
   padding: 10px 60px;
@@ -609,7 +610,6 @@ header .flex-container-menu-header {
   justify-content: space-between;
   padding: 15px 90px;
   margin-top: 10px;
-  border-radius: 20px;
 }
 .navbar-header .nav-menu-shop a:link {
   color: #1472D0;
@@ -630,11 +630,13 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-shop p {
   align-self: center;
   color: hsl(0deg, 0%, 54%);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 @media (min-width: 832px) {
   .navbar-header .nav-menu-shop {
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 20px;
   }
   .navbar-header .nav-menu-shop p {
     padding-left: 10px;
