@@ -103,6 +103,8 @@ header{
         height: 100vh;
         font-size: 16px;
         color: $headerLightGrey;
+        position: absolute;
+        z-index: 1001;
         li{
             padding: 10px 60px;
         }
