@@ -312,7 +312,7 @@ body {
 }
 
 .top-img-container {
-  position: relative;
+ position: relative;
 }
 
 .top-card {
@@ -327,6 +327,7 @@ body {
   top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -384,6 +385,7 @@ body {
   padding: 2px;
   color: #1472d0;
 }
+
 .img-gallery-container .ipodpro-text {
   width: 100%;
   display: flex;
@@ -419,7 +421,7 @@ body {
   line-height: 1.525;
   text-decoration: none;
   color: #1472d0;
-}
+
 .img-gallery-container .airpod-text {
   width: 100%;
   display: flex;
@@ -596,7 +598,9 @@ body {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
+
 .img-gallery-container .card {
+
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -684,6 +688,9 @@ header .flex-container-menu-header {
   height: 100vh;
   font-size: 16px;
   color: #D6D6D6;
+  position: relative;
+  z-index: 1001;
+  padding-bottom: 100px;
 }
 .navbar-header .nav-menu-header li {
   padding: 10px 60px;
@@ -750,7 +757,6 @@ header .flex-container-menu-header {
   justify-content: space-between;
   padding: 15px 90px;
   margin-top: 10px;
-  border-radius: 20px;
 }
 .navbar-header .nav-menu-shop a:link {
   color: #1472D0;
@@ -771,11 +777,13 @@ header .flex-container-menu-header {
 .navbar-header .nav-menu-shop p {
   align-self: center;
   color: hsl(0deg, 0%, 54%);
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 @media (min-width: 832px) {
   .navbar-header .nav-menu-shop {
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 20px;
   }
   .navbar-header .nav-menu-shop p {
     padding-left: 10px;
