@@ -347,14 +347,19 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  flex-direction: row;
 }
 .img-gallery-container .iphone14-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  color: black;
   font-family: "Roboto", sans-serif;
 }
 .img-gallery-container .iphone14-text h2 {
@@ -366,7 +371,6 @@ body {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .img-gallery-container .iphone14-text p {
-  margin-left: 44px;
   font-size: 19px;
   color: #f5f5f7;
   line-height: 1.21053;
@@ -375,7 +379,6 @@ body {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .img-gallery-container .iphone14-text a {
-  margin-left: 5%;
   font-size: 16px;
   line-height: 1.525;
   text-decoration: none;
@@ -384,9 +387,12 @@ body {
 }
 
 .img-gallery-container .ipodpro-text {
-
-
-
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -395,7 +401,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .img-gallery-container .ipodpro-text h2 {
-  margin-left: 30%;
   color: #f5f5f7;
   font-size: 29px;
   line-height: 1.125;
@@ -404,7 +409,6 @@ body {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .img-gallery-container .ipodpro-text p {
-  margin-left: 10px;
   font-size: 19px;
   color: #f5f5f7;
   line-height: 1.21053;
@@ -413,46 +417,182 @@ body {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .img-gallery-container .ipodpro-text a {
-  margin-left: 10%;
   font-size: 16px;
   line-height: 1.525;
   text-decoration: none;
   color: #1472d0;
 
 .img-gallery-container .airpod-text {
-
-
-
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .airpod-text h2 {
+  color: #f5f5f7;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .airpod-text p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .airpod-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .airpod-text .fa-brands {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
 }
 .img-gallery-container .apple-watch-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .apple-watch-text h2 {
+  color: #f5f5f7;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-text p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .apple-watch-text .fa-brands {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+.img-gallery-container .apple-watch-text .red-text {
+  color: red;
+  font-size: 12px;
 }
 .img-gallery-container .apple-watch-ultra-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
   font-family: "Roboto", sans-serif;
 }
+.img-gallery-container .apple-watch-ultra-text h2 {
+  color: black;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-ultra-text p {
+  font-size: 19px;
+  color: black;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-ultra-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .apple-watch-ultra-text .fa-brands {
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+}
+.img-gallery-container .apple-watch-ultra-text .red-text {
+  color: red;
+  font-size: 12px;
+}
 .img-gallery-container .tv4k-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
   font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .tv4k-text h2 {
+  color: black;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .tv4k-text p {
+  font-size: 19px;
+  color: black;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .tv4k-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .tv4k-text .fa-brands {
+  color: black;
+  padding: 10px;
+  font-size: 30px;
 }
 .img-gallery-container a {
   -webkit-text-decoration-line: none;
@@ -478,6 +618,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@media (min-width: 1200px) {
+  .img-gallery-container .card {
+    width: 48%;
+    margin: 5px;
+  }
 }
 
 * {

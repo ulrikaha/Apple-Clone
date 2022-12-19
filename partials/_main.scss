@@ -319,15 +319,27 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  flex-direction: row;
 
-  
+  // @media (min-width: 1200px) {
+  //   .img-gallery-container {
+  //     display: flex;
+  //     flex-wrap: wrap;
+     
+  //   }
+  // }
 
   .iphone14-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
     font-family: "Roboto", sans-serif;
 
     h2 {
@@ -335,13 +347,12 @@ body {
       font-size: 29px;
       line-height: 1.125;
       font-weight: 600;
-
       letter-spacing: 0.004em;
       font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
         "Helvetica", "Arial", sans-serif;
     }
     p {
-      margin-left: 44px;
+  
       font-size: 19px;
       color: #f5f5f7;
       line-height: 1.21053;
@@ -351,7 +362,7 @@ body {
         "Helvetica", "Arial", sans-serif;
     }
     a {
-      margin-left: 5%;
+   
       font-size: 16px;
       line-height: 1.525;
       text-decoration: none;
@@ -361,6 +372,12 @@ body {
   }
 
   .ipodpro-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -369,18 +386,17 @@ body {
     font-family: "Roboto", sans-serif;
 
     h2 {
-      margin-left: 30%;
+  
       color: #f5f5f7;
       font-size: 29px;
       line-height: 1.125;
       font-weight: 600;
-
       letter-spacing: 0.004em;
       font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
         "Helvetica", "Arial", sans-serif;
     }
     p {
-      margin-left: 10px;
+      
       font-size: 19px;
       color: #f5f5f7;
       line-height: 1.21053;
@@ -390,7 +406,7 @@ body {
         "Helvetica", "Arial", sans-serif;
     }
     a {
-      margin-left: 10%;
+   
       font-size: 16px;
       line-height: 1.525;
       text-decoration: none;
@@ -398,37 +414,198 @@ body {
     }
   }
   .airpod-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     font-family: "Roboto", sans-serif;
+
+    h2 {
+      color: #f5f5f7;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+  
+      font-size: 19px;
+      color: #f5f5f7;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: white;
+      padding: 10px;
+      font-size: 30px;
+    }
   }
 
   .apple-watch-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     font-family: "Roboto", sans-serif;
+   
+
+    h2 {
+      color: #f5f5f7;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+  
+      font-size: 19px;
+      color: #f5f5f7;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: white;
+      padding: 10px;
+      font-size: 30px;
+    }
+    .red-text{
+      color: red;
+      font-size: 12px;
+    }
   }
   .apple-watch-ultra-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
     font-family: "Roboto", sans-serif;
+
+    h2 {
+      color: black;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+  
+      font-size: 19px;
+      color: black;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: black;
+      padding: 10px;
+      font-size: 30px;
+    }
+    .red-text{
+      color: red;
+      font-size: 12px;
+    }
   }
   .tv4k-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
     font-family: "Roboto", sans-serif;
+
+    h2 {
+      color:black;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+  
+      font-size: 19px;
+      color: black;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: black;
+      padding: 10px;
+      font-size: 30px;
+    }
   }
 
   a {
@@ -437,7 +614,7 @@ body {
   .card {
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 100%;
     height: 548px;
     position: relative;
     overflow: hidden;
@@ -451,6 +628,12 @@ body {
       z-index: -1;
       object-fit: cover;
       transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+  }
+  @media (min-width: 1200px) {
+    .card {
+      width: 48%;
+      margin:5px;
     }
   }
 }
