@@ -1,4 +1,3 @@
-
 /* Responsive CSS slider */
 let sliderUL = document.querySelector('.s-type-3 > .s-content');
 let sliderLength = sliderUL.childElementCount;
@@ -21,6 +20,8 @@ let onControlClick = (direction) => {
 leftControl.addEventListener('click', () => onControlClick('left'));
 
 rightControl.addEventListener('click', () => onControlClick('right'));
+
+
 const hamburger = document.querySelector(".hamburger");
 const navBarLinks = document.querySelector(".navbar-links-header");
 const shopMenu = document.querySelector(".menulinks-header");
@@ -36,9 +37,6 @@ shopIcon.addEventListener("click", () => {
     shopMenu.classList.toggle("active");
 })
 
-
-
 shopIconDesktop.addEventListener("click", () => {
     shopMenu.classList.toggle("active");
 })
-
