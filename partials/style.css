@@ -312,7 +312,7 @@ body {
 }
 
 .top-img-container {
- position: relative;
+  position: relative;
 }
 
 .top-card {
@@ -327,7 +327,6 @@ body {
   top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -353,7 +352,6 @@ body {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: black;
   font-family: "Roboto", sans-serif;
 }
@@ -382,11 +380,7 @@ body {
   padding: 2px;
   color: #1472d0;
 }
-
 .img-gallery-container .ipodpro-text {
-
-
-
   position: absolute;
   top: 15%;
   left: 50%;
@@ -418,11 +412,8 @@ body {
   line-height: 1.525;
   text-decoration: none;
   color: #1472d0;
-
+}
 .img-gallery-container .airpod-text {
-
-
-
   position: absolute;
   top: 15%;
   left: 50%;
@@ -458,9 +449,7 @@ body {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
-
 .img-gallery-container .card {
-
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -841,7 +830,7 @@ i#shopper-mobile:hover {
 
 .image-header {
   width: 100%;
-  background-color: white;
+  background-color: #FBFBFD;
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
