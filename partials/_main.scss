@@ -15,7 +15,7 @@ body {
   width: 90%;
   margin: 50px auto;
 }
-
+ 
 // basic styles slider
 .s-wrap {
   width: 100%;
@@ -26,15 +26,15 @@ body {
   background-color: #efefe8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-
+ 
   @media screen and (max-width: 734px) {
     height: 495px
   }
-
+ 
   > input {
     display: none;
   }
-
+ 
   .s-content {
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@ body {
     list-style: none;
     transition: transform $switch-speed;
   }
-
+ 
   .s-item {
     display: inline-block;
     width: $slider-width;
@@ -55,7 +55,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
+ 
   .s-item-1 {
     background-image: url($image1);
   }
@@ -72,7 +72,7 @@ body {
     background-image: url($image5);
   }
 }
-
+ 
 .s-type-3 {
   .left-control,
   .right-control {
@@ -85,15 +85,15 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
-
+ 
   .right-control {
     left: auto;
     right: 0;
   }
 }
-
+ 
 .slide-content {
-
+ 
     position: absolute;
     left: 5%;
     top: 73%;
@@ -105,7 +105,7 @@ body {
     display: flex;
     align-items: center;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-
+ 
     @media  (max-width: 734px) {
      
         display: flex;
@@ -115,9 +115,9 @@ body {
         align-items: center;
         max-width: 200px;
         margin-top: 5px;
-      
+     
     }
-
+ 
     .slider-btn {
       text-decoration: none;
       background-color: #fff;
@@ -132,14 +132,14 @@ body {
       font-size: 14px;
       line-height: 1.42859;
       font-weight: 700;
-
+ 
       i {
         padding-left: 5px;
       }
-
+ 
     }
-  
-
+ 
+ 
   p {
     font-size: 19px;
     line-height: 1.21053;
@@ -148,30 +148,30 @@ body {
     color:#fff;
       text-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
       margin-left: 8px;
-
+ 
       @media  (max-width: 734px) {
         font-size: 15px;
         padding-bottom: 10px;
       }
-
+ 
       .slider-genre{
         font-size: 19px;
         line-height: 1.21053;
         font-weight: 700;
         letter-spacing: 0em;
-
+ 
         @media  (max-width: 734px) {
           font-size: 15px;
         }
       }
-
+ 
       .slider-dot{
         font-weight: 700px;
       }
-
-    
-
-    
+ 
+   
+ 
+   
   }
   @media (min-width: 600px) {
     position: absolute;
@@ -187,6 +187,446 @@ body {
       "Arial", sans-serif;
   }
 }
+ 
+.top-card {
+  height: 500px;
+  position: relative;
+ 
+  img {
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+  }
+  .emoji-text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+ 
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+ 
+  h2 {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    color: #f5f5f7;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+  p {
+    font-size: 19px;
+    color: #f5f5f7;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 25px;
+    color: #1472d0;
+  }
+}
+ 
+.Ipad-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5f7;
+  font-family: "Roboto", sans-serif;
+ 
+  h2 {
+    margin-left: 30%;
+    color: black;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+  p {
+    color: black;
+  }
+  a {
+    margin-left: 10%;
+    font-size: 16px;
+    line-height: 1.525;
+    text-decoration: none;
+    padding: 2px;
+    color: #1472d0;
+  }
+}
+ 
+.top-img-container {
+  position: relative;
+}
+.top-card {
+  height: 520px;
+  position: relative;
+  // height: 700px;
+  // position: relative;
+  // overflow: hidden;
+ 
+  // display: grid;
+  // grid-template-rows: 1fr 1fr;
+  // transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  .emoji-text {
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.top-img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 548px;
+}
+ 
+.img-gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  flex-direction: row;
+ 
+  // @media (min-width: 1200px) {
+  //   .img-gallery-container {
+  //     display: flex;
+  //     flex-wrap: wrap;
+     
+  //   }
+  // }
+ 
+  .iphone14-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+ 
+    h2 {
+      color: #f5f5f7;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+ 
+      font-size: 19px;
+      color: #f5f5f7;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+  }
+ 
+  .ipodpro-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: "Roboto", sans-serif;
+ 
+    h2 {
+ 
+      color: #f5f5f7;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+     
+      font-size: 19px;
+      color: #f5f5f7;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      color: #1472d0;
+    }
+  }
+  .airpod-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+ 
+    h2 {
+      color: #f5f5f7;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+ 
+      font-size: 19px;
+      color: #f5f5f7;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: white;
+      padding: 10px;
+      font-size: 30px;
+    }
+  }
+ 
+  .apple-watch-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+   
+ 
+    h2 {
+      color: #f5f5f7;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+ 
+      font-size: 19px;
+      color: #f5f5f7;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: white;
+      padding: 10px;
+      font-size: 30px;
+    }
+    .red-text{
+      color: red;
+      font-size: 12px;
+    }
+  }
+  .apple-watch-ultra-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+ 
+    h2 {
+      color: black;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+ 
+      font-size: 19px;
+      color: black;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: black;
+      padding: 10px;
+      font-size: 30px;
+    }
+    .red-text{
+      color: red;
+      font-size: 12px;
+    }
+  }
+  .tv4k-text {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+ 
+    h2 {
+      color:black;
+      font-size: 29px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    p {
+ 
+      font-size: 19px;
+      color: black;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+    a {
+   
+      font-size: 16px;
+      line-height: 1.525;
+      text-decoration: none;
+      padding: 2px;
+      color: #1472d0;
+    }
+    .fa-brands{
+      color: black;
+      padding: 10px;
+      font-size: 30px;
+    }
+  }
+ 
+  a {
+    text-decoration-line: none;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 548px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+ 
+    img {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+      transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+  }
+  @media (min-width: 1200px) {
+    .card {
+      width: 48%;
+      margin:5px;
+    }
+  }
+}
+
 
 .top-card {
   height: 500px;
