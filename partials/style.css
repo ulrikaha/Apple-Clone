@@ -2,7 +2,7 @@ footer {
   margin-top: auto;
   display: block;
   height: auto;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -93,7 +93,7 @@ p {
 @media screen and (min-width: 834px) {
   .footer-desktop {
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 22px;
     padding-bottom: 34px;
     text-align: justify;
@@ -300,6 +300,391 @@ body {
     display: flex;
     align-items: center;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+}
+
+.top-card {
+  height: 500px;
+  position: relative;
+}
+.top-card img {
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top-card .emoji-text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.top-card h2 {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  color: #f5f5f7;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.top-card p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.top-card a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 25px;
+  color: #1472d0;
+}
+
+.Ipad-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5f7;
+  font-family: "Roboto", sans-serif;
+}
+.Ipad-text h2 {
+  margin-left: 30%;
+  color: black;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.Ipad-text p {
+  color: black;
+}
+.Ipad-text a {
+  margin-left: 10%;
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+
+.top-img-container {
+  position: relative;
+}
+
+.top-card {
+  height: 520px;
+  position: relative;
+}
+.top-card .emoji-text {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 548px;
+}
+
+.img-gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+.img-gallery-container .iphone14-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .iphone14-text h2 {
+  color: #f5f5f7;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .iphone14-text p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .iphone14-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .ipodpro-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .ipodpro-text h2 {
+  color: #f5f5f7;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .ipodpro-text p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .ipodpro-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  color: #1472d0;
+}
+.img-gallery-container .airpod-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .airpod-text h2 {
+  color: #f5f5f7;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .airpod-text p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .airpod-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .airpod-text .fa-brands {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+.img-gallery-container .apple-watch-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .apple-watch-text h2 {
+  color: #f5f5f7;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-text p {
+  font-size: 19px;
+  color: #f5f5f7;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .apple-watch-text .fa-brands {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+.img-gallery-container .apple-watch-text .red-text {
+  color: red;
+  font-size: 12px;
+}
+.img-gallery-container .apple-watch-ultra-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .apple-watch-ultra-text h2 {
+  color: black;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-ultra-text p {
+  font-size: 19px;
+  color: black;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .apple-watch-ultra-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .apple-watch-ultra-text .fa-brands {
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+}
+.img-gallery-container .apple-watch-ultra-text .red-text {
+  color: red;
+  font-size: 12px;
+}
+.img-gallery-container .tv4k-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+}
+.img-gallery-container .tv4k-text h2 {
+  color: black;
+  font-size: 29px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .tv4k-text p {
+  font-size: 19px;
+  color: black;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.img-gallery-container .tv4k-text a {
+  font-size: 16px;
+  line-height: 1.525;
+  text-decoration: none;
+  padding: 2px;
+  color: #1472d0;
+}
+.img-gallery-container .tv4k-text .fa-brands {
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+}
+.img-gallery-container a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+.img-gallery-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 548px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.img-gallery-container .card img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@media (min-width: 1200px) {
+  .img-gallery-container .card {
+    width: 48%;
+    margin: 5px;
   }
 }
 
