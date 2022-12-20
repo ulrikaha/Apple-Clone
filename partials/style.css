@@ -8,7 +8,7 @@ footer {
   right: 0;
   font-family: "SF Pro Text";
   font-size: 12px;
-  background-color: #f5f5f7;
+  background-color: rgba(245, 245, 247, 0.937254902);
 }
 
 .footer-nav {
@@ -90,7 +90,6 @@ p {
   padding: 0px 10px 0px 0px;
 }
 
-
 @media screen and (min-width: 834px) {
   .footer-desktop {
     height: auto;
@@ -114,7 +113,10 @@ p {
     color: #1d1d1f;
     font-size: 12px;
   }
-  .footer-desktop .column-1-9 ul li a {
+  .footer-desktop .column-1-9 ul {
+    list-style: none;
+  }
+  .footer-desktop .column-1-9 li a {
     list-style: none;
     text-decoration: none;
     font-size: 12px;
@@ -130,7 +132,6 @@ p {
     display: none;
   }
 }
-
 *,
 *::before,
 *::after {
@@ -157,49 +158,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-
-.s-wrap > input {
-  display: none;
-}
-.s-wrap .s-content {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 500%;
-  height: 100%;
-  font-size: 0;
-  list-style: none;
-  transition: transform 1s;
-}
-.s-wrap .s-item {
-  display: inline-block;
-  width: 20%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.s-wrap .s-item-1 {
-  background-image: url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800");
-}
-.s-wrap .s-item-2 {
-  background-image: url("https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800");
-}
-.s-wrap .s-item-3 {
-  background-image: url("https://images.unsplash.com/photo-1428189923803-e9801d464d76?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800");
-}
-.s-wrap .s-item-4 {
-  background-image: url("https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800");
-}
-.s-wrap .s-item-5 {
-  background-image: url("https://images.unsplash.com/photo-1439736637365-748f240b24fb?crop=entropy&fit=crop&fm=jpg&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800");
-
 @media screen and (max-width: 734px) {
   .s-wrap {
     height: 495px;
   }
-
 }
 .s-wrap > input {
   display: none;
@@ -257,23 +219,6 @@ body {
 
 .slide-content {
   position: absolute;
-
-  /* left: 5%; */
-  top: 40%;
-  margin: 5px;
-  /* margin-left: 60px; */
-  margin-top: px;
-  color: #fff;
-  z-index: 1;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  /* flex: auto; */
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
   left: 5%;
   top: 73%;
   margin-left: 60px;
@@ -296,7 +241,6 @@ body {
     margin-top: 5px;
   }
 }
-
 .slide-content .slider-btn {
   text-decoration: none;
   background-color: #fff;
@@ -320,11 +264,6 @@ body {
   line-height: 1.21053;
   font-weight: 400;
   letter-spacing: 0em;
-
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-  margin-left: 8px;
-}
-
   color: #fff;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   margin-left: 8px;
@@ -335,20 +274,17 @@ body {
     padding-bottom: 10px;
   }
 }
-
 .slide-content p .slider-genre {
   font-size: 19px;
   line-height: 1.21053;
   font-weight: 700;
   letter-spacing: 0em;
 }
-
 @media (max-width: 734px) {
   .slide-content p .slider-genre {
     font-size: 15px;
   }
 }
-
 .slide-content p .slider-dot {
   font-weight: 700px;
 }
@@ -442,37 +378,7 @@ body {
 }
 
 .top-img-container {
-
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
-  grid-gap: 0.5rem;
   position: relative;
-}
-@media (min-width: 678px) {
-  .top-img-container {
-    grid-template-columns: repeat(auto-fill, minmax(850px, 1fr));
-  }
-}
-
-.top-card {
-  height: 700px;
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.emoji-text {
-  position: absolute;
-  top: 74%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Roboto", sans-serif;
-
-  position: relative;
-
 }
 
 .top-card {
@@ -487,9 +393,6 @@ body {
   top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  color: black;
-
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -522,7 +425,6 @@ body {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   font-family: "Roboto", sans-serif;
 }
 .img-gallery-container .iphone14-text h2 {
@@ -548,10 +450,6 @@ body {
   padding: 2px;
   color: #1472d0;
 }
-
-
-.ipodpro-text {
-
 .img-gallery-container .ipodpro-text {
   width: 100%;
   display: flex;
@@ -559,7 +457,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: absolute;
   top: 15%;
   left: 50%;
@@ -589,10 +486,6 @@ body {
   text-decoration: none;
   color: #1472d0;
 }
-
-
-.airpod-text {
-
 .img-gallery-container .airpod-text {
   width: 100%;
   display: flex;
@@ -600,7 +493,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: absolute;
   top: 15%;
   left: 50%;
@@ -770,20 +662,7 @@ body {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
-
-
-.img-gallery-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-
 .img-gallery-container .card {
-
   display: flex;
   flex-direction: column;
   width: 100%;
