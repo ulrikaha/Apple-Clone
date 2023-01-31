@@ -1,3 +1,2 @@
-School project @ KYH - Agile project
-Clone of Apples webpage
-#Apple-Clone
+School project @ KYH - Agile project to make a copy of a webpage. In this case Apples. 
+
